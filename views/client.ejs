@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SalarySurf AutoJob Apply - Configuration</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SalarySurf AutoJob Apply - Configuration</h1>
+        <form id="configForm">
+            <section class="personal-info">
+                <h2>Personal Information</h2>
+                <input type="text" name="fullName" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="location" placeholder="Location" required>
+                <input type="tel" name="phone" placeholder="Phone Number" required>
+                <input type="text" name="linkedin" placeholder="LinkedIn Profile URL">
+            </section>
+
+            <section class="job-preferences">
+                <h2>Job Preferences</h2>
+                <input type="text" name="jobTitles" placeholder="Job Titles (comma-separated)" required>
+                <input type="text" name="locations" placeholder="Preferred Locations (comma-separated)" required>
+                <select name="jobType" multiple>
+                    <option value="fulltime">Full-time</option>
+                    <option value="parttime">Part-time</option>
+                    <option value="contract">Contract</option>
+                    <option value="remote">Remote</option>
+                    <option value="hybrid">Hybrid</option>
+                </select>
+                <input type="number" name="minSalary" placeholder="Minimum Salary Expected">
+            </section>
+
+            <section class="experience">
+                <h2>Work Experience</h2>
+                <div id="experienceFields">
+                    <div class="experience-entry">
+                        <input type="text" name="company[]" placeholder="Company Name">
+                        <input type="text" name="title[]" placeholder="Job Title">
+                        <input type="date" name="startDate[]">
+                        <input type="date" name="endDate[]">
+                        <textarea name="description[]" placeholder="Job Description"></textarea>
+                    </div>
+                </div>
+                <button type="button" id="addExperience" class="btn btn-secondary">Add More Experience</button>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <div id="educationFields">
+                    <div class="education-entry">
+                        <input type="text" name="school[]" placeholder="School/University">
+                        <input type="text" name="degree[]" placeholder="Degree">
+                        <input type="text" name="field[]" placeholder="Field of Study">
+                        <input type="date" name="graduationDate[]">
+                    </div>
+                </div>
+                <button type="button" id="addEducation" class="btn btn-secondary">Add More Education</button>
+            </section>
+
+            <section class="preferences">
+                <h2>Application Preferences</h2>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="visaSponsorship"> Require Visa Sponsorship
+                    </label>
+                    <label>
+                        <input type="checkbox" name="willingToRelocate"> Willing to Relocate
+                    </label>
+                    <label>
+                        <input type="checkbox" name="backgroundCheck"> Agree to Background Check
+                    </label>
+                </div>
+            </section>
+
+            <section class="documents">
+                <h2>Documents</h2>
+                <div class="file-upload">
+                    <label>Resume (Required)</label>
+                    <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="file-upload">
+                    <label>Cover Letter (Optional)</label>
+                    <input type="file" name="coverLetter" accept=".pdf,.doc,.docx">
+                </div>
+            </section>
+
+            <section class="blacklist">
+                <h2>Blacklist</h2>
+                <textarea name="blacklistCompanies" placeholder="Companies to avoid (one per line)"></textarea>
+                <textarea name="blacklistTitles" placeholder="Job titles to avoid (one per line)"></textarea>
+            </section>
+
+            <button type="submit" class="btn btn-primary">Generate Configuration</button>
+        </form>
+    </div>
+    <script src="/js/client.js"></script>
+</body>
+</html>

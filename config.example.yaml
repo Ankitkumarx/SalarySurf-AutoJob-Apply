@@ -1,0 +1,41 @@
+personalInfo:
+  fullName: "John Doe"
+  email: "john@example.com"
+  phone: "+1234567890"
+  location: "New York, NY"
+  linkedinUrl: "https://linkedin.com/in/johndoe"
+
+jobPreferences:
+  titles:
+    - "Software Engineer"
+    - "Full Stack Developer"
+  locations:
+    - "New York, NY"
+    - "Remote"
+  types:
+    - "fulltime"
+    - "remote"
+  minSalary: 100000
+
+experience:
+  - company: "Tech Corp"
+    title: "Senior Developer"
+    startDate: "2020-01"
+    endDate: "2023-12"
+    description: "Led development team..."
+
+education:
+  - school: "University Name"
+    degree: "Bachelor's"
+    field: "Computer Science"
+    graduationDate: "2019-05"
+
+documents:
+  resumePath: "C:/path/to/resume.pdf"
+  coverLetterPath: "C:/path/to/cover-letter.pdf"
+
+blacklist:
+  companies:
+    - "Avoid Corp"
+  titles:
+    - "Sales Engineer"

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SalarySurf AutoJob Apply - Admin</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SalarySurf AutoJob Apply - Admin Panel</h1>
+        <div class="control-panel">
+            <div class="profile-section">
+                <h2>Chrome Profile Selection</h2>
+                <select id="chromeProfile">
+                    <option value="">Select Chrome Profile</option>
+                </select>
+            </div>
+            <div class="controls">
+                <button id="startBot" class="btn btn-primary">Start Bot</button>
+                <button id="stopBot" class="btn btn-danger">Stop Bot</button>
+            </div>
+            <div class="status">
+                <h3>Status: <span id="botStatus">Stopped</span></h3>
+            </div>
+        </div>
+    </div>
+    <script src="/js/admin.js"></script>
+</body>
+</html>

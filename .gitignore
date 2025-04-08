@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Chrome profiles
+chrome-profiles/
+
+# Configuration files with sensitive data
+configs/*
+!configs/example.yaml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
